@@ -20,6 +20,8 @@ namespace BMK_API.Controllers
             _userRepo = userRepo;
         }
 
+        public UserController() { }
+
         public Registration RegisterKnife(int userId, string productSKU)
         {
             return _userRepo.RegisterProduct(userId, productSKU);
