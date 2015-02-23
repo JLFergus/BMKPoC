@@ -31,6 +31,7 @@ namespace BMK_API.Tests.Controllers
         [Test]
         public void TestRegisterProduct()
         {
+            var testCtrlr = new UserController();
             var ctrlr = new UserController(_userRepo);
             var reg = ctrlr.RegisterKnife(0, "KNIFE");
             Assert.AreEqual(reg.Comment, "not actually registered!");
