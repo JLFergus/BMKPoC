@@ -16,9 +16,9 @@ namespace BMK.DAL.Test
             Assert.AreEqual(10, 5 + 5);
         }
         [Test]
-        public void TestFail()
+        public void TestPass2()
         {
-            Assert.AreSame(10, 5 + 6);
+            Assert.AreEqual(11, 5 + 6);
         }
     }
 }
